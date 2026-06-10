@@ -5,7 +5,7 @@
   height: var(--card-circle-size);
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   transition: 0.5s;
   transition-delay: 0.5s;
   flex-shrink: 0;
