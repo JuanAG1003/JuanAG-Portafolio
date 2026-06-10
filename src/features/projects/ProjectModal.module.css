@@ -1,0 +1,154 @@
+.modal {
+  border: none;
+  max-width: 800px;
+  min-height: 80dvh;
+  margin: auto;
+  border-radius: 44px;
+  background-color: var(--primary-color-dark);
+  color: var(--text-color-withe);
+  overflow: hidden;
+}
+
+.modal::backdrop {
+  background-color: var(--background-color-black-light-transparent);
+  backdrop-filter: blur(4px);
+}
+
+.modal__content {
+  max-height: 95dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 1.5em 3em;
+  overflow-y: auto;
+}
+
+.modal__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.title{
+  padding-bottom: .5em;
+  text-align: center;
+}
+
+.container__img{
+  display: flex;
+  justify-content: center;
+}
+
+.container__img > img {
+  max-height: 600px;
+  object-fit: contain;
+}
+
+.buttons__container {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  border-radius: 16px;
+  background-color: var(--backgroaund-color-blue-dark);
+  font-size: var(--font-size-xl);
+  padding: .5em;
+}
+
+.button:active {
+  transform: scale(.98);
+}
+
+.container__icons {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.container__icon {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
+  width: var(--svg-size-medium);
+  height: var(--svg-size-medium);
+}
+
+.icon__name {
+  
+}
+
+.description {
+  font-size: var(--font-size-lg);
+  text-align: justify;
+}
+
+.links__container {
+  display: flex;
+  gap: 5em;
+}
+
+.link__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5em;
+  padding: 0.5em;
+}
+
+.link__container:hover {
+  transform: scale(.98);
+  opacity: .8;
+}
+
+.link__container span {
+  color: var(--highlight-color);
+}
+
+.button__close {
+  position: absolute;
+  font-size: var(--font-size-lg);
+  right: 0;
+  margin: 0 1em 0 0;
+  padding: .5em;
+  color: var(--highlight-color);
+}
+
+@media screen and (max-width: 1200px)  {
+  .modal {
+    max-width: 80dvw;
+  }
+
+  .icon {
+    width: var(--svg-size-medium-mobile);
+    height: var(--svg-size-medium-mobile);
+  }
+}
+
+@media screen and (max-width: 600px)  {
+  .modal__content {
+    padding: 1.5em;
+  }
+
+  .buttons__container {
+    width: 60%;
+  }
+
+  .button {
+    border-radius: 10px;
+  }
+  
+  .description {
+    font-size: var(--font-size-base);
+  }
+}

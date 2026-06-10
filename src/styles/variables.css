@@ -1,0 +1,65 @@
+:root {
+  --background-color-black-light: #080818;
+  --background-color-black-light-transparent: #080818aa; 
+  --background-color-black: #050505;
+  --background-color-grey: #222;
+  --background-color-white: #e2eaff;
+  --background-color-withe-hover: #d4c0c0af;
+  --backgroaund-color-blue-dark: #18233f;
+  --text-color-withe: #ffffff;
+  --text-color-black-hover: #10141a;
+  --primary-color-light: #00f2fe;
+  --primary-color: #2ca9bc;
+  --primary-color-dark: #358488;
+  --primary-color-dark-hover: #307077;
+  --highlight-color: #c1e00e;
+  --subtle-color: #e0f7f8;
+  --shadow-color-grey-light: #75757599;
+  /* --close-color-red: #b32b2b; */
+
+
+  /*
+    TOKENS DE TAMAÑO DE FUENTE RESPONSIVOS (clamp)
+    Calculados con base de 16px (320px - 1440px)
+  */
+  /*360 - 1240*/
+  --font-size-xs:  clamp(0.75rem, 0.7244rem + 0.1136dvw, 0.8125rem);   /* ~12px a 13px   (Textos legales, microcopy) */
+  --font-size-sm:  clamp(0.875rem, 0.8239rem + 0.2273dvw, 1rem);       /* ~14px a 16px   (Textos secundarios, captions) */
+  --font-size-base: 1rem;                                             /* Fijado a 16px  (El texto de tus párrafos no debe bailar) */
+  --font-size-lg:  clamp(1rem, 0.9972rem + 0.5682dvw, 1.4375rem);      /* ~16px a 23px   (Subtítulos pequeños, destacados) */
+  --font-size-lg-container-skills:  clamp(1rem, -0.3125rem + 14cqi, 1.4375rem);    
+  --font-size-lg-container-project:  clamp(1rem, 0.7266rem + 0.875cqi, 1.4375rem);  
+  --font-size-xl:  clamp(1.25rem, 0.9943rem + 1.1364dvw, 1.875rem);    /* ~20px a 30px   (Títulos de tarjetas, H3) */
+  /* --font-size-xl-container: clamp(1.25rem, -0.625rem + 20cqi, 1.875rem); */
+  --font-size-2xl: clamp(1.4375rem, 1.1051rem + 1.4773dvw, 2.5rem);    /* ~23px a 36px   (Títulos medianos, H2) */
+  --font-size-3xl: clamp(1.625rem, 1.1392rem + 2.1591dvw, 3rem);       /* ~26px a 45px   (Títulos principales, H1) */
+  --font-size-4xl: clamp(1.875rem, 0.5966rem + 5.6818dvw, 5rem);       /* ~30px a 80px   (Textos gigantes de portada / Hero) */
+
+
+  /* 
+   TOKENS DE INTERLINEADO (Line Height)
+   Regla: A mayor tamaño de letra, menor interlineado
+  */
+  --line-height-tight: 1.15; /* Exclusivo para 4xl y 3xl (Evita que los títulos gigantes se separen) */
+  --line-height-snug:  1.25; /* Para 2xl y xl (Títulos medianos) */
+  --line-height-heading: 1.35;/* Para lg (Subtítulos) */
+  --line-height-base:  1.5;  /* Para texto normal (base y sm). Es el estándar de accesibilidad para lectura cómoda */
+  --line-height-loose: 1.65; /* Para textos muy pequeños (xs), dándoles aire para que no se amontonen */
+
+  --img-profile-size: 600px;
+  --img-profile-size-mobile: 250px;
+  --img-projects-size-width: 600px;
+  --img-projects-size-height-mobile: 400px;
+  --img-projects-size-small-height-mobile: 200px;
+  --card-circle-size: 220px;
+  --card-circle-extends-size: 400px;
+  --card-circle-size-mobile-width: 80dvw;
+  --card-circle-size-mobile-height: 200px;
+  --svg-size-small: 30px;
+  --svg-size-small-mobile: 16px;
+  --svg-size-medium-small: 50px;
+  --svg-size-medium: 60px;
+  --svg-size-medium-mobile: 40px;
+  --svg-size-large: 80px;
+  --svg-size-large-mobile: 55px;
+}

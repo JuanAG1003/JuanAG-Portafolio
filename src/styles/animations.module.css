@@ -1,0 +1,69 @@
+/* 2. El punto de luz con box-shadow expansivo */
+@property --a {
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+.border-animation::before  {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: repeating-conic-gradient(
+    from var(--a),
+    var(--primary-color-light) 0%,
+    var(--primary-color-light) 5%,
+    transparent 5%,
+    transparent 40%,
+    var(--primary-color-light) 50%
+  );
+  filter: drop-shadow(0 15px 50px #000);
+  border-radius: 20px;
+  animation: rotating 4s linear infinite;
+  animation-delay: -1s;
+  z-index: -1;
+}
+
+/* 3. Una capa intermedia para ocultar el centro del brillo y mostrar los textos */
+.border-animation::after { 
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background-color: var(--background-color-card);
+  border-radius: var(--radius-animation);
+  z-index: -1;
+}
+
+@keyframes rotating {
+  0% {
+    --a: 0deg;
+  }
+
+  0% {
+    --a: 360deg;
+  }
+}
+
+@keyframes move-shadow {
+  0% {
+    top: -30px;
+    left: -30px;
+  }
+  25% {
+    top: -30px;
+    left: calc(100% - 30px);
+  }
+  50% {
+    top: calc(100% - 30px);
+    left: calc(100% - 30px);
+  }
+  75% {
+    top: calc(100% - 30px);
+    left: -30px;
+  }
+  100% {
+    top: -30px;
+    left: -30px;
+  }
+}

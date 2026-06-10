@@ -1,0 +1,84 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;  /**para quitar el recuadro azul del navegador movil*/
+}
+
+html, body {
+  min-height: 100dvh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-image: url("../assets/resource/fondo1.svg");
+  /* background-attachment: fixed; */
+  color: var(--text-color-withe);
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; */
+  /* line-height: 1.5; */
+}
+
+body:has(dialog:modal) {
+  overflow: hidden;
+}
+
+p, span, li {
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+}
+
+h1 {
+  font-size: var(--font-size-3xl);
+  line-height: var(--line-height-tight);
+  font-weight: 800;
+}
+
+h2 {
+  font-size: var(--font-size-2xl);
+  line-height: var(--line-height-snug);
+  font-weight: 800;
+}
+
+h3 {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-snug);
+  font-weight: 600;
+}
+
+img, picture, video, canvas, svg {
+  /* display: block; */
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media screen and (max-width:600px) {
+  body {
+    background-attachment: fixed;
+  }
+}

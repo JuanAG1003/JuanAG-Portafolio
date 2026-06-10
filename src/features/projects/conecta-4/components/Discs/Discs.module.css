@@ -1,0 +1,22 @@
+.discs {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #d42323;
+  animation: intro 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  z-index: 1;
+}
+
+.discs--yellow {
+  background-color: #c8d423;
+}
+
+@keyframes intro {
+    from {
+      transform: translateY(var(--distancia-top, -100dvh));   
+    }
+
+    to {
+      transform: translateY(0);   
+    }
+}

@@ -1,0 +1,40 @@
+.footer {
+  border-radius: 22px;
+  height: 60dvh;
+}
+
+/* Estado inicial: Luces encendidas de forma tenue */
+.gtr-light {
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+  filter: none;
+}
+
+/* Se dispara la animación de arranque SOLO cuando se añade la clase .visible */
+.visible {
+  animation: encendidoGtr 2s ease-out both;
+}
+
+/* Efecto al pasar el mouse por encima de cualquier parte del SVG */
+svg:hover .gtr-light {
+  opacity: 1;
+  fill: #ff1e1e; /* Un rojo más vivo e intenso */
+  /* Efecto de encendido/brillo expansivo simulando xenón/LED */
+  filter: drop-shadow(0 0 15px #ff0000) drop-shadow(0 0 30px #ff0000);
+}
+
+/* OPCIONAL: Animación de "parpadeo de encendido" al cargar la página */
+@keyframes encendidoGtr {
+  0% { opacity: 0; filter: none; }
+  20% { opacity: 0.2; }
+  40% { opacity: 0.1; }
+  60% { opacity: 0.9; filter: drop-shadow(0 0 10px #ff0000); }
+  80% { opacity: 0.4; }
+  100% { opacity: 0.6; }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    height: 40dvh;
+  }
+}
