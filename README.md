@@ -1,8 +1,8 @@
-# Portafolio Web - [Tu Nombre]
+# Portafolio Web - JuanAG
 
-🔗 [Ver Portafolio en Vivo](URL_DE_TU_VERCEL)
+🔗 [Ver Portafolio en Vivo](https://juan-ag-portafolio.vercel.app)
 
-¡Hola! Soy [Tu Nombre], un Desarrollador Web enfocado en el Front-End y el ecosistema de JavaScript. Este repositorio contiene el código fuente de mi portafolio personal, diseñado y desarrollado para mostrar mis proyectos, habilidades técnicas y mi progreso como programador.
+¡Hola! Soy Juan Ariel, un Desarrollador Web enfocado en el Front-End y el ecosistema de JavaScript. Este repositorio contiene el código fuente de mi portafolio personal, diseñado y desarrollado para mostrar mis proyectos, habilidades técnicas y mi progreso como programador.
 
 Actualmente estoy en la búsqueda de mi primera oportunidad profesional en la industria tecnológica, con mucha motivación para aportar valor, escribir código limpio y seguir aprendiendo en un entorno de desarrollo real.
 
@@ -17,7 +17,7 @@ Decidí construir este portafolio desde cero para tener control total sobre el d
 * **Arquitectura Limpia:** Uso de componentes modulares y buenas prácticas de código.
 * **Integración Continua:** Despliegue automático configurado con Vercel.
 
-## 🛠️ Tecnologías Utilizadas (Stack del Portafolio)
+## Tecnologías Utilizadas (Stack del Portafolio)
 
 * **Framework:** React (v18+)
 * **Entorno de Construcción:** Vite
