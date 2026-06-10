@@ -10,6 +10,7 @@
 
 .hero__card {
   composes: border-animation from "../../styles/animations.module.css";
+  composes: aparecer-hero from "../../styles/animations.module.css";
   --radius-animation: 30px;
   --background-color-card: var(--background-color-black);
   position: relative;

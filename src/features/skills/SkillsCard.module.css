@@ -1,4 +1,5 @@
 .card {
+  composes: aparecer from "../../styles/animations.module.css";
   position: relative;
   width: var(--card-circle-size);
   height: var(--card-circle-size);

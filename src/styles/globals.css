@@ -13,6 +13,10 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-image: url("../assets/resource/fondo1.svg");
   /* background-attachment: fixed; */
@@ -82,3 +86,4 @@ ol {
     background-attachment: fixed;
   }
 }
+

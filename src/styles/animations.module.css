@@ -67,3 +67,23 @@
     left: -30px;
   }
 }
+
+.aparecer {
+  animation: aparecer both;
+  animation-timeline: view();
+  animation-range: cover 0% cover 40%;
+}
+
+.aparecer-hero {
+  animation: aparecer 2.4s -.6s both;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+}
