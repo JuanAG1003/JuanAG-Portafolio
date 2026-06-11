@@ -15,6 +15,7 @@
 
 .skills__container {
   margin: auto;
+  margin-bottom: 4em;
   position: relative;
   min-height: 40dvh;
   display: flex;

@@ -20,12 +20,12 @@
  .portfolio__project-container {
   display: grid;
   grid-template-columns: repeat(4,minmax(150px,1fr));
-  grid-auto-rows: 32%;
+  grid-auto-rows: minmax(240px,32%);
   max-width: 1300px;
   margin: auto;
   width: 100%;
   gap: 2%;
-  min-height: 82dvh;
+  margin-bottom: 4em;
 }
 
 .portfolio__project-container > :first-child{
@@ -46,7 +46,7 @@
 @media screen and (max-width: 1200px)  {
   .portfolio__project-container {
     grid-template-columns: repeat(2,minmax(200px,1fr));
-    grid-auto-rows: 23.5%;
+    grid-auto-rows: minmax(180px,23.5%);
     max-width: 80dvw;
   }
 
